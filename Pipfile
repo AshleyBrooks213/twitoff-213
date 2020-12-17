@@ -12,6 +12,8 @@ spacy = "*"
 python-dotenv = "*"
 numpy = "==1.19.3"
 scikit-learn = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
