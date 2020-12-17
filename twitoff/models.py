@@ -23,8 +23,8 @@ class Tweet(DB.Model):
     """Tweet Text and Data"""
     # primary id column
     id = DB.Column(DB.BigInteger, primary_key=True)
-    # text column of character length 300 (unicode)
-    text = DB.Column(DB.Unicode(300))
+    # text column of character length 500 (unicode)
+    text = DB.Column(DB.Unicode(500))
     vect = DB.Column(DB.PickleType, nullable=False)
     # foreign key - user.id
     user_id = DB.Column(DB.BigInteger, DB.ForeignKey(
