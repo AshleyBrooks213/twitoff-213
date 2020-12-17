@@ -1,4 +1,4 @@
-#ignoring the mogrations dir
+#ignoring the migrations dir
 migrations/
 
 # Byte-compiled / optimized / DLL files
