@@ -37,30 +37,30 @@ class Tweet(DB.Model):
 
 def insert_example_users():
     """Will get error if ran twice since data already exists"""
-    ashley = User(id=1, name="AshleyBrooks213")
-    travis = User(id=2, name="travisbrooks")
-    DB.session.add(ashley) # adds ashley User
-    DB.session.add(travis) # adds travis User
+    elonmusk = User(id=1, name="elonmusk")
+    jackblack = User(id=2, name="jackblack")
+    DB.session.add(elonmusk) # adds elonmusk User
+    DB.session.add(jackblack) # adds jackblack User
     DB.session.commit() # commits all
 
 
-def insert_example_tweets():
-    user1_id = 213
-    user2_id = 330
-    """Will get error if ran twice since data already exists"""
-    ashleys_tweet1 = Tweet(id=1, text="It's almost Christmas!", user_id=user1_id, user=ashley)
-    travis_tweet1 = Tweet(id=2, text="Hello!", user_id=user2_id, user=travis)
-    ashleys_tweet2 = Tweet(id=3, text="Hola!", user_id=user1_id, user=ashley)
-    travis_tweet2 = Tweet(id=4, text="Hi!", user_id=user2_id, user=travis)
-    ashleys_tweet3 = Tweet(id=5, text="Oui, ca va?", user_id=user1_id, user=ashley)
-    travis_tweet3 = Tweet(id=6, text="Goodbye!", user_id=user2_id, user=travis)
-    DB.session.add(ashleys_tweet1) # adds ashleys_tweet1
-    DB.session.add(travis_tweet1) # adds travis_tweet1
-    DB.session.add(ashleys_tweet2) # adds ashleys_tweet2
-    DB.session.add(travis_tweet2) # adds travis_tweet2
-    DB.session.add(ashleys_tweet3) # adds ashleys_tweet3
-    DB.session.add(travis_tweet3) # adds travis_tweet3
-    DB.session.commit() # commits all
+#def insert_example_tweets():
+    #user1_id = 213
+    #user2_id = 330
+    #"""Will get error if ran twice since data already exists"""
+    #ashleys_tweet1 = Tweet(id=1, text="It's almost Christmas!", user_id=user1_id, user=ashley)
+    #travis_tweet1 = Tweet(id=2, text="Hello!", user_id=user2_id, user=travis)
+    #ashleys_tweet2 = Tweet(id=3, text="Hola!", user_id=user1_id, user=ashley)
+    #travis_tweet2 = Tweet(id=4, text="Hi!", user_id=user2_id, user=travis)
+    #ashleys_tweet3 = Tweet(id=5, text="Oui, ca va?", user_id=user1_id, user=ashley)
+    #travis_tweet3 = Tweet(id=6, text="Goodbye!", user_id=user2_id, user=travis)
+    #DB.session.add(ashleys_tweet1) # adds ashleys_tweet1
+    #DB.session.add(travis_tweet1) # adds travis_tweet1
+    #DB.session.add(ashleys_tweet2) # adds ashleys_tweet2
+    #DB.session.add(travis_tweet2) # adds travis_tweet2
+    #DB.session.add(ashleys_tweet3) # adds ashleys_tweet3
+    #DB.session.add(travis_tweet3) # adds travis_tweet3
+    #DB.session.commit() # commits all
 
         
         
